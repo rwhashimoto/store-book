@@ -50,4 +50,13 @@
             }
         }
     }
+    &-fashion {
+        background: url(/images/common/fashion_001.jpg) no-repeat;
+        min-height: 520px;
+        padding: 60px 0 0;
+        margin: 0 0 80px;
+        .btn_more {
+            margin: 30px auto 0;
+        }
+    }
 }
