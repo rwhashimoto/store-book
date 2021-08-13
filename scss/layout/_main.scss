@@ -1,8 +1,53 @@
 .l-main {
-    p{
-        background-color: red;
-        @include media-sp{
-            background-color: green;
+    &-heading {//l-main-heading
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-lead {//l-main-lead
+        margin: 20px 0 0;
+        text-align: center;
+    }
+    &-magazine {//l-main-magazine
+        max-width: 1200px;
+        margin: 0 auto 80px;
+        padding: 0 4%;
+        &-items {//l-main-magazine-items
+            display: flex;
+            justify-content: space-between;
+            @include media-sp{
+                flex-direction: column;
+            }
+        }
+        &-item {//l-main-magazine-item
+            position: relative;
+            width: 49%;
+            margin: 40px 0 0;
+            @include media-sp{
+                margin: 30px 0 0;
+            }
+            @include media-sp{
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+            .text-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 290px;
+                padding: 15px 0;
+                text-align: center;
+                color: $base-color;
+                background-color: $sub-color;
+                .title {
+                    font-size: 2.0rem;
+                }
+            }
         }
     }
 }
