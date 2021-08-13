@@ -50,11 +50,16 @@
             }
         }
     }
-    &-fashion {
+    &-fashion {//l-main-fashion
         background: url(/images/common/fashion_001.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
         min-height: 520px;
         padding: 60px 0 0;
         margin: 0 0 80px;
+        @include media-sp{
+            margin: 0 0 50px;
+        }
         .btn_more {
             margin: 30px auto 0;
         }
