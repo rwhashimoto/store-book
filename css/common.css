@@ -343,11 +343,151 @@ a {
   right: 30px;
 }
 
-.l-main p {
-  background-color: red;
+.l-main-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .l-main p {
-    background-color: green;
+.l-main-lead {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.l-main-magazine {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 4%;
+}
+.l-main-magazine-items {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 896px) {
+  .l-main-magazine-items {
+    flex-direction: column;
   }
+}
+.l-main-magazine-item {
+  position: relative;
+  width: 49%;
+  margin: 40px 0 0;
+}
+@media screen and (max-width: 896px) {
+  .l-main-magazine-item {
+    margin: 30px 0 0;
+  }
+}
+@media screen and (max-width: 896px) {
+  .l-main-magazine-item {
+    width: 100%;
+  }
+}
+.l-main-magazine-item img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.l-main-magazine-item .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 290px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #707070;
+}
+.l-main-magazine-item .text-box .title {
+  font-size: 2rem;
+}
+.l-main-fashion {
+  background: url(/images/common/fashion_001.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 520px;
+  padding: 60px 0 0;
+  margin: 0 0 80px;
+}
+@media screen and (max-width: 896px) {
+  .l-main-fashion {
+    margin: 0 0 50px;
+  }
+}
+.l-main-fashion .btn_more {
+  margin: 30px auto 0;
+}
+.l-main-catalog, .l-main-antique {
+  background-color: #F5F5F5;
+  padding: 60px 0;
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog, .l-main-antique {
+    padding: 30px 0;
+  }
+}
+.l-main-catalog-content, .l-main-antique-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content, .l-main-antique-content {
+    flex-direction: column;
+  }
+}
+.l-main-catalog-content .img-area, .l-main-antique-content .img-area {
+  width: 48%;
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content .img-area, .l-main-antique-content .img-area {
+    width: 100%;
+  }
+}
+.l-main-catalog-content .img-area img, .l-main-antique-content .img-area img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.l-main-catalog-content .text-area, .l-main-antique-content .text-area {
+  width: 48%;
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content .text-area, .l-main-antique-content .text-area {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content .text-area:last-child, .l-main-antique-content .text-area:last-child {
+    margin: 60px 0 0;
+  }
+}
+.l-main-catalog-content .text-area p, .l-main-antique-content .text-area p {
+  margin: 30px 0 0;
+}
+.l-main-catalog-content .text-area .btn_more, .l-main-antique-content .text-area .btn_more {
+  margin: 60px auto 0;
+}
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content .text-area .btn_more, .l-main-antique-content .text-area .btn_more {
+    margin: 60px auto;
+  }
+}
+
+.btn_more {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 33px;
+  max-width: 133px;
+  color: #333333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: solid 1px #333333;
+  transition: all ease-in-out 0.3s;
+}
+.btn_more:hover {
+  background-color: #333333;
+  color: #fff;
 }/*# sourceMappingURL=common.css.map */
