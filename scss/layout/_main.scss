@@ -64,4 +64,50 @@
             margin: 30px auto 0;
         }
     }
+    &-catalog,//l-main-catalog
+    &-antique {//l-main-antique
+        background-color: $bg-color;
+        padding: 60px 0;
+        @include media-sp{
+            padding: 0;
+        }
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 4%;
+            @include media-sp{
+                flex-direction: column;
+            }
+            .img-area {
+                width: 48%;
+                @include media-sp{
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .text-area {
+                width: 48%;
+                @include media-sp{
+                    width: 100%;
+                    margin: 60px 0 0;
+                }
+                p {
+                    margin: 30px 0 0;
+                }
+                .btn_more {
+                    margin: 60px auto 0;
+                    @include media-sp{
+                        margin: 60px auto;
+                    }
+                }
+            }
+        }
+    }
+
 }
