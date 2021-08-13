@@ -1,0 +1,15 @@
+.btn_more {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 33px;
+    max-width: 133px;
+    color: $main-color;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: solid 1px $main-color;
+    transition: all ease-in-out 0.3s ;
+    &:hover {
+        background-color: $main-color;
+        color: $base-color;
+    }
+}
