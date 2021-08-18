@@ -1,10 +1,49 @@
 .l-footer {
-    &-items {//.l-footer-items
+    background-color: $main-color;
+    &-content {//.l-footer-content
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        height: 368px;
+        margin: 0 auto;
+        padding: 0 4%;
     }
-    &-copyright {
+    &-logo {//.l-footer-logo
+        display: flex;
+        align-items: center;
+        width: 32%;
+
+    }
+    &-text {//.l-footer-text
+        display: flex;
+        justify-content: space-between;
+        width: 68%;
+        .text-box {
+            width: 50%;
+        }
+        .title {
+            margin: 0 0 10px;
+            font-weight: bold;
+            color: $base-color;
+        }
+        .list {
+            list-style: none;
+            font-size: 1.2rem;
+            color: $base-color;
+        }
+        .sentence {
+            list-style: none;
+            font-size: 1.2rem;
+            color: $base-color;
+        }
+
+    }
+
+    &-copyright {//.l-footer-copyright
         padding: 36px 0;
         text-align: center;
         font-size: 1.2rem;
+        background-color: $base-color;
     }
 }
