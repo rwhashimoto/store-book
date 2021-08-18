@@ -1,7 +1,9 @@
 .l-main {
+    font-family: $font-family;
     &-heading {//l-main-heading
-        font-size: 2.4rem;
         font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
         text-align: center;
     }
     &-lead {//l-main-lead
@@ -93,7 +95,7 @@
                 }
             }
             .text-area {
-                width: 48%;
+                width: 49%;
                 @include media-sp{
                     width: 100%;
                 }
