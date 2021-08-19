@@ -10,8 +10,9 @@
         padding: 0 4%;
         @include media-sp{
             flex-direction: column;
-            justify-content: center;
+            justify-content: start;
             height: 456px;
+            padding:0 5%;
         }
     }
     &-logo {//.l-footer-logo
@@ -21,7 +22,7 @@
         @include media-sp{
             justify-content: center;
             width: 100%;
-            margin: 0 0 30px;
+            margin: 30px 0 47px;
         }
     }
     &-text {//.l-footer-text
@@ -37,6 +38,9 @@
             margin-top: -20px;
             @include media-sp{
                 width: 100%;
+                &:last-of-type {
+                    margin-top: -10px;
+                }
             }
         }
         .title {

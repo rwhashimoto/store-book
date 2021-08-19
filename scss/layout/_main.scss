@@ -14,11 +14,15 @@
         max-width: 1200px;
         margin: 0 auto 77px;
         padding: 0 4%;
+        @include media-sp{
+            padding: 0 5%;
+        }
         &-items {//l-main-magazine-items
             display: flex;
             justify-content: space-between;
             @include media-sp{
                 flex-direction: column;
+                align-items: center;
             }
         }
         &-item {//l-main-magazine-item
@@ -26,10 +30,10 @@
             width: 49%;
             margin: 40px 0 0;
             @include media-sp{
-                margin: 30px 0 0;
-            }
-            @include media-sp{
                 width: 100%;
+                &:nth-of-type(2) {
+                    margin: 30px 0 0;
+                }
             }
             img {
                 width: 100%;
@@ -57,10 +61,11 @@
         background-size: cover;
         background-position: center;
         min-height: 520px;
-        padding: 60px 0 0;
         margin: 0 0 80px;
+        padding: 60px 0 0;
         @include media-sp{
             margin: 0 0 50px;
+            padding: 35px 0 0;
         }
         .btn_more {
             margin: 30px auto 0;
@@ -82,6 +87,7 @@
             padding: 0 4%;
             @include media-sp{
                 flex-direction: column;
+                padding: 0 5%;
             }
             .img-area {
                 width: 48%;
@@ -99,13 +105,16 @@
                 @include media-sp{
                     width: 100%;
                 }
-                &:last-child {//要見直し
+                &:last-child {
                     @include media-sp{
                         margin: 60px 0 0;
                     }
                 }
                 p {
                     margin: 30px 0 0;
+                    @include media-sp{
+                        margin: 33px 0 0;
+                    }
                 }
                 .btn_more {
                     margin: 60px auto 0;
