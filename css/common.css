@@ -590,4 +590,11 @@ a {
 .btn_more:hover {
   background-color: #333333;
   color: #fff;
+}
+
+.btn_logo {
+  transition: all ease-in-out 0.3s;
+}
+.btn_logo:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=common.css.map */
