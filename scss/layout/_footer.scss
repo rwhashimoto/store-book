@@ -56,6 +56,22 @@
             @include media-sp{
                 margin: 0 0 30px;
             }
+            li {
+                position: relative;
+                padding-left: 10px;
+            }
+            li::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 5px;
+                height: 1px;
+                margin-right: 5px;
+                background-color: $base-color;
+            }
         }
         .sentence {
             list-style: none;
@@ -63,9 +79,7 @@
             line-height: 2.4rem;
             color: $base-color;
         }
-
     }
-
     &-copyright {//.l-footer-copyright
         padding: 27.5px 0;
         text-align: center;

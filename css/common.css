@@ -415,6 +415,22 @@ a {
     margin: 0 0 30px;
   }
 }
+.l-footer-text .list li {
+  position: relative;
+  padding-left: 10px;
+}
+.l-footer-text .list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1px;
+  margin-right: 5px;
+  background-color: #fff;
+}
 .l-footer-text .sentence {
   list-style: none;
   font-size: 1.2rem;
