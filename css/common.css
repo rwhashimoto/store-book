@@ -359,8 +359,9 @@ a {
 @media screen and (max-width: 896px) {
   .l-footer-content {
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     height: 456px;
+    padding: 0 5%;
   }
 }
 .l-footer-logo {
@@ -372,7 +373,7 @@ a {
   .l-footer-logo {
     justify-content: center;
     width: 100%;
-    margin: 0 0 30px;
+    margin: 30px 0 47px;
   }
 }
 .l-footer-text {
@@ -387,11 +388,15 @@ a {
   }
 }
 .l-footer-text .text-box {
-  width: 50%;
+  width: 47.5%;
+  margin-top: -20px;
 }
 @media screen and (max-width: 896px) {
   .l-footer-text .text-box {
     width: 100%;
+  }
+  .l-footer-text .text-box:last-of-type {
+    margin-top: -10px;
   }
 }
 .l-footer-text .title {
@@ -402,6 +407,7 @@ a {
 .l-footer-text .list {
   list-style: none;
   font-size: 1.2rem;
+  line-height: 2.4rem;
   color: #fff;
 }
 @media screen and (max-width: 896px) {
@@ -409,21 +415,42 @@ a {
     margin: 0 0 30px;
   }
 }
+.l-footer-text .list li {
+  position: relative;
+  padding-left: 10px;
+}
+.l-footer-text .list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1px;
+  margin-right: 5px;
+  background-color: #fff;
+}
 .l-footer-text .sentence {
   list-style: none;
   font-size: 1.2rem;
+  line-height: 2.4rem;
   color: #fff;
 }
 .l-footer-copyright {
-  padding: 36px 0;
+  padding: 27.5px 0;
   text-align: center;
   font-size: 1.2rem;
   background-color: #fff;
 }
 
+.l-main {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
 .l-main-heading {
-  font-size: 2.4rem;
   font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   text-align: center;
 }
 .l-main-lead {
@@ -432,8 +459,13 @@ a {
 }
 .l-main-magazine {
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 0 auto 77px;
   padding: 0 4%;
+}
+@media screen and (max-width: 896px) {
+  .l-main-magazine {
+    padding: 0 5%;
+  }
 }
 .l-main-magazine-items {
   display: flex;
@@ -442,6 +474,7 @@ a {
 @media screen and (max-width: 896px) {
   .l-main-magazine-items {
     flex-direction: column;
+    align-items: center;
   }
 }
 .l-main-magazine-item {
@@ -451,12 +484,10 @@ a {
 }
 @media screen and (max-width: 896px) {
   .l-main-magazine-item {
-    margin: 30px 0 0;
-  }
-}
-@media screen and (max-width: 896px) {
-  .l-main-magazine-item {
     width: 100%;
+  }
+  .l-main-magazine-item:nth-of-type(2) {
+    margin: 30px 0 0;
   }
 }
 .l-main-magazine-item img {
@@ -483,12 +514,13 @@ a {
   background-size: cover;
   background-position: center;
   min-height: 520px;
-  padding: 60px 0 0;
   margin: 0 0 80px;
+  padding: 60px 0 0;
 }
 @media screen and (max-width: 896px) {
   .l-main-fashion {
     margin: 0 0 50px;
+    padding: 35px 0 0;
   }
 }
 .l-main-fashion .btn_more {
@@ -496,7 +528,7 @@ a {
 }
 .l-main-catalog, .l-main-antique {
   background-color: #F5F5F5;
-  padding: 60px 0;
+  padding: 58.5px 0;
 }
 @media screen and (max-width: 896px) {
   .l-main-catalog, .l-main-antique {
@@ -514,6 +546,7 @@ a {
 @media screen and (max-width: 896px) {
   .l-main-catalog-content, .l-main-antique-content {
     flex-direction: column;
+    padding: 0 5%;
   }
 }
 .l-main-catalog-content .img-area, .l-main-antique-content .img-area {
@@ -530,7 +563,7 @@ a {
   vertical-align: top;
 }
 .l-main-catalog-content .text-area, .l-main-antique-content .text-area {
-  width: 48%;
+  width: 49%;
 }
 @media screen and (max-width: 896px) {
   .l-main-catalog-content .text-area, .l-main-antique-content .text-area {
@@ -545,6 +578,11 @@ a {
 .l-main-catalog-content .text-area p, .l-main-antique-content .text-area p {
   margin: 30px 0 0;
 }
+@media screen and (max-width: 896px) {
+  .l-main-catalog-content .text-area p, .l-main-antique-content .text-area p {
+    margin: 33px 0 0;
+  }
+}
 .l-main-catalog-content .text-area .btn_more, .l-main-antique-content .text-area .btn_more {
   margin: 60px auto 0;
 }
@@ -557,7 +595,7 @@ a {
 .btn_more {
   display: block;
   margin: 0 auto;
-  padding: 17px 33px;
+  padding: 14px 33px;
   max-width: 133px;
   color: #333333;
   font-size: 1.2rem;
@@ -568,4 +606,11 @@ a {
 .btn_more:hover {
   background-color: #333333;
   color: #fff;
+}
+
+.btn_logo {
+  transition: all ease-in-out 0.3s;
+}
+.btn_logo:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=common.css.map */
