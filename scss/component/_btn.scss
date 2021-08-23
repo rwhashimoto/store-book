@@ -8,14 +8,18 @@
     text-decoration: none;
     border: solid 1px $main-color;
     transition: all ease-in-out 0.3s ;
-    &:hover {
-        background-color: $main-color;
-        color: $base-color;
+    @include media-pc {
+        &:hover {
+            background-color: $main-color;
+            color: $base-color;
+        }
     }
 }
 .btn_logo {
     transition: all ease-in-out 0.3s ;
-    &:hover {
-        opacity: 0.7;
+    @include media-pc {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }

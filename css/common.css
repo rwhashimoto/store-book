@@ -603,14 +603,18 @@ a {
   border: solid 1px #333333;
   transition: all ease-in-out 0.3s;
 }
-.btn_more:hover {
-  background-color: #333333;
-  color: #fff;
+@media screen and (min-width: 897px) {
+  .btn_more:hover {
+    background-color: #333333;
+    color: #fff;
+  }
 }
 
 .btn_logo {
   transition: all ease-in-out 0.3s;
 }
-.btn_logo:hover {
-  opacity: 0.7;
+@media screen and (min-width: 897px) {
+  .btn_logo:hover {
+    opacity: 0.7;
+  }
 }/*# sourceMappingURL=common.css.map */
