@@ -511,7 +511,7 @@ a {
   font-size: 2rem;
 }
 .l-main-fashion {
-  background: url(images/common/fashion_001.jpg) no-repeat;
+  background: url(../images/common/fashion_001.jpg) no-repeat;
   background-size: cover;
   background-position: center 60%;
   min-height: 520px;
