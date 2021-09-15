@@ -491,7 +491,9 @@ a {
 }
 .l-main-magazine-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   vertical-align: top;
 }
 .l-main-magazine-item .text-box {
@@ -511,7 +513,7 @@ a {
 .l-main-fashion {
   background: url(/images/common/fashion_001.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center 60%;
   min-height: 520px;
   margin: 0 0 80px;
   padding: 60px 0 0;
