@@ -91,14 +91,19 @@
                 padding: 0 5%;
             }
             .img-area {
+                position: relative;
                 width: 48%;
+                padding-top: 48%;
                 @include media-sp{
                     width: 100%;
+                    padding-top: 100%;
                 }
                 img {
+                    position: absolute;
+                    top: 0;
                     width: 100%;
-                    height: auto;
-                    vertical-align: top;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
             .text-area {

@@ -551,17 +551,23 @@ a {
   }
 }
 .l-main-catalog-content .img-area, .l-main-antique-content .img-area {
+  position: relative;
   width: 48%;
+  padding-top: 48%;
 }
 @media screen and (max-width: 896px) {
   .l-main-catalog-content .img-area, .l-main-antique-content .img-area {
     width: 100%;
+    padding-top: 100%;
   }
 }
 .l-main-catalog-content .img-area img, .l-main-antique-content .img-area img {
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: auto;
-  vertical-align: top;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-main-catalog-content .text-area, .l-main-antique-content .text-area {
   width: 49%;
